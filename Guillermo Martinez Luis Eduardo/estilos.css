@@ -1,5 +1,5 @@
 body{
-    background-color: #632432;
+    background-color: #40AB0F;
     font-family: arial;
 }
 
@@ -27,3 +27,12 @@ table{
 th,td{
     border: solid 1px black;
 }
+
+.nav_INICIO{
+    display: inline-block;
+    background: salmon;
+    color: #ffffff;
+    padding: 10px 30px;
+    
+}
+
