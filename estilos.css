@@ -34,3 +34,16 @@
     text-decoration: none;
 }
 
+.nav-enlace2{
+    text-align: center;
+    background: purple;
+    color: #FF9999;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-enlace2:hover{
+    background: green;
+
+}
