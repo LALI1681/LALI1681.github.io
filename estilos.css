@@ -43,6 +43,10 @@
     display: block;
 }
 
+.nav-enlace:hover{
+    background: green;
+}
+
 .nav-enlace2:hover{
     background: green;
 
