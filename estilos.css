@@ -1,6 +1,7 @@
-i.nav-1{
+.nav-1{
     background: #FFCCCC;
     padding: 20px;
+    
 }
 
 .name{
@@ -30,5 +31,6 @@ i.nav-1{
     background: purple;
     color: #FF9999;
     padding: 10px 30px;
+    text-decoration: none;
 }
 
