@@ -1,0 +1,74 @@
+body{
+    background-color: #a8dda8;
+    font-family: arial;
+    margin: 50px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.nav-enlace{
+    text-decoration: none;
+}
+
+.alumno{
+    background-color: #28ABB9;
+    font-family: arial;
+    margin: 10px;
+    height: 100px 10px;
+    align-items: center;
+}
+
+h1{
+    font-size: 200%;
+}
+
+p{
+    font-size: 150%;
+}
+
+.left{
+    float: left;
+    padding: 80px 10px; 
+}
+
+.main-container{
+    margin: 150px auto;
+    width: 600px;
+}
+
+table{
+    background-color: purple;
+    text-align: left;
+    width: 100%; 
+    
+}
+ 
+th,td{
+    border: solid 1px black; 
+}
+
+.nav_INICIO{
+    display: inline-block;
+    background: #EFFAD3;
+    padding: 10px 30px; 
+}
+
+.nav_INICIO:hover{
+    background: yellowgreen;
+}
+
+.cabezal{
+    background: cadetblue;
+}
+
+.TAREAS{
+    background: white;
+}
+
+.chido{
+    text-decoration: none;  
+}
+
+.chido:hover{
+    background: gold;
+}
