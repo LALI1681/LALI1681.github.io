@@ -1,7 +1,15 @@
-.nav-1{
+h1{
+    text-align: center;
+    font-size: 150%;
+}
+
+nav{
+    margin: 20px;
+}
+
+}.nav-1{
     background: #FFCCCC;
-    padding: 20px;
-    
+    padding: 20px;  
 }
 
 .name{
@@ -12,26 +20,30 @@
     margin: 10px;
 }
 
+.cuadro{
+    font-size:150%;
+    width: 1005;
+    height: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background: green;
+    border: 5px solid black;
+}
+
 .padre{
     display: flex;
 }
 
 .hola{
-    
-    background: #CCFF33;
     color: black;
-    padding: 5px;
-    width: 100%;
-    margin: 5px;
-    display: block;
-
 }
 
 .nav-enlace{
     background: purple;
     color: #FF9999;
-    padding: 10px 30px;
+    padding: 10px 40px ;
     text-decoration: none;
+   
 }
 
 .nav-enlace2{
@@ -51,3 +63,17 @@
     background: green;
 
 }
+ hr{
+    height: 10px;
+    width: 50%;
+    background-color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+ }
+
+ .Derechos{
+     text-align: center;
+     margin: 50px;
+ }
+
