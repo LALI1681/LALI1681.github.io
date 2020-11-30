@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 7</title>
+    
+    <meta name="viewport" content="width=device-width, user-
+    scalable=no, initial-scale=1, maximum-scale=1.0, minimum-
+    scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <header>
+                <h1>ALU</h1>
+            </header>
+          
+        <div id="header">
+            <nav>
+                <ul class="nav">
+                    <li><a href="/index.html">INICIO</a></li>                      
+                   
+                    <li><a href="">1 PARCIAL</a>
+                        <ul>
+                            <li><a href="/González Díaz Jobana/Parcial 1/index.html">Jobana</a></li>
+                            <li><a href="/Hernández Castro Azucena/Parcial 1/index.html">Azucena</a></li>
+                            <li><a href="/Plomares Lulo Victor Jair/Parcial 1/index.html">Jair</a></li>
+                            <li><a href="/Guillermo Martinez Luis Eduardo/parcial 1/index.html">Luis</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="">2 PARCIAL</a>
+                        <ul>
+                            <li><a href="">MEMORIA INTERNA</a></li>
+                            <li><a href="">MEMORIA EXTERNA</a></li>
+                            <li><a href="/Parcial2/TEMAS/5.DISPOSITIVOS DE ENTRADA Y SALIDA/Tarea1.html">DISPOSITIVOS DE ENTRADA Y SALIDA</a></li>
+                            <li><a href="">CPU</a></li>
+                            <li><a href="/Parcial2/TEMAS/7.ALU/Tarea 7.html">ALU</a></li>
+                            <li><a href="/Parcial2/TEMAS/8.INSTRUCCIONES/index.html">INSTRUCCIONES</a></li>
+                            <li><a href="">TIPOS DE OPERADORES</a></li>
+                            <li><a href="">MODOS DE DIRECCIONAMIENTO</a></li>
+                            <li><a href="">CISC</a></li>
+                            <li><a href="">RISC</a></li>
+                        </ul>   
+                    </li>
+    
+    
+                    <li><a href="">3 PARCIAL</a></li>
+                </ul>
+            </nav>
+        </div>
+            <section id="contenido">
+                <article>
+                    <b> <h2>ALU Unidad aritmético-lógica </h2> </b>
+                    <p>Definición La ALU (unidad aritmético-lógica) es el dispositivo que se encarga de realizar:<br>
+                                         Operaciones aritméticas (suma, resta, etc.).<br>
+                                         Operaciones lógicas (and, or, xor, etc.).<br><br>
+                    Una ALU (Unidad Aritmética-Lógica) es un circuito que permite, como su nombre lo indica, 
+                    realizar operaciones lógicas y aritméticas.<br>
+                    Además de los operadores lógicos y aritméticos, la ALU cuenta con una serie de registros 
+                    para almacenar los datos, y bits de información sobre los resultados, también llamados banderas.<br>
+                    <div><img src="Imagenes/alu.jpg" width="300" height="300"/></div>
+               
+                <br>
+                <h2>ARITMÉTICA CON ENTEROS </h2>
+               <p> Esta diferencia de notación en los números binarios con signo también se observa
+                 en los algoritmos utilizados para realizar distintas operaciones aritméticas.<br>
+                  Por ejemplo para sumar <br>
+                 7 = 1111 más +5 = 0101 <br>
+                 En la notación signo magnitud hay que separar los signos y las magnitudes.
+                 Si los signos son iguales, las magnitudes se suman; si los signos son diferentes,<br>
+                la magnitud más pequeña debe restarse de la magnitud más grande y el resultado se acompaña del signo de la mayor magnitud: 1010.<br>
+                  <div><img src="Imagenes/AE.jpg" width="300" height="300"/></div><br>
+           </p><p>En cambio para la notación complemento a dos, la realización de la suma aritmética emplea el mismo algoritmo utilizados en números decimales.<br>
+            Ejemplos: <br>
+           (-7) + (+5) 1001 0101 1110 = -2 Acarreo = 0<br>
+           (-7) + (-6) 1001 1010 0011 = 3 Acarreo = 1 <br>
+           En la última suma, el acarreo no está junto con el resultado, normalmente se ignora.<br>
+           Entonces ocurre un desborde en el resultado de la operación y la computadora lo consigna como acarreo en alguno de sus registros internos.<br>
+           Es usual reconocer un desborde en el resultado si el signo de este es contrario a lo esperado.<br><br>
+           Para multiplicar dos números binarios sin signo, se puede aplicar el algoritmo usualmente utilizado en numeración decimal. 
+           <br>Ejemplo:<br></p>
+           <div><img src="Imagenes/EjemploAE.jpg" width="300" height="300"/></div>
+           
+           <p> Este algoritmo se puede realizar con más eficiencia haciendo una suma progresiva de productos parciales
+            sin tener que esperar hasta el final para ello y se evita así la necesidad de almacenar todos los productos parciales ocupando registros. 
+            El diagrama de flujo se ilustra en la siguiente figura.</p>
+            <div><img src="Imagenes/Multiplicador.jpg" width="300" height="400"/></div>
+           
+            <p>De acuerdo con este diagrama, el multiplicador y el multiplicando están ubicados en los registros Q y M.
+             El acumulador A, de igual número de bits que M, se carga inicialmente con 0. El bit de acarreo se inicializa con 0.
+              El algoritmo empieza leyendo uno por uno los bits del multiplicador. Si Q0 es 1, se suma el multiplicando al registro
+               A y el resultado es almacenado en A.</p>
+               <br>
+               <h2> ARITMÉTICA DE PUNTO FLOTANTE</h2>
+               <p>
+           En la aritmetica de punto flotante, la multiplicacion y la division son sencillas. 
+           En el siguiente diagrama se ilustra la multiplicacion de punto flotante.<br>
+           Si cualquiera de los operando X o Y es 0, el resultado es 0. El primer paso consiste en sumar los exponentes. 
+                   Si los exponentes estan almacenados en forma sesgada su suma tendria un doble sesgo.
+                   Por lo tanto hay que eliminar el sesgo antes de sumarlos y el resultado volver a sesgarlo.<br>
+                   El resultado podría dar lugar a un desborde que debe ser indicado y concluir el algoritmo.
+                    Si el exponente del producto está dentro del rango apropiado, se multiplican las mantisas 
+                    teniendo en cuenta los signos, aplicando el algoritmo de multiplicación.
+                     Tras calcular el producto se normaliza y se redondea el resultado. <br>
+                     Para el caso en que la multiplicación de las mantisas se haga con el algoritmo de Booth,
+                     tomar en cuenta que las mantisas deben estar en formato complemento 2.<br>
+                     <div><img src="Imagenes/Apf.jpg" width="400" height="400"/></div>
+               </p><br>
+               <br>
+              <p> PROBLEMAS UTILIZANDO EL ALGORITMO DE BOOTH<br><br>
+           PROBLEMA RESUELTO DE PUNTO FLOTANTE <br>
+           Desarrolle el producto de los números: (- 3.25) x (14.75) x (-1). <br>
+           En la solución utilice los algoritmos estudiado en clase; asuma que los registros tienen una magnitud de siete bits. <br>
+           Expresar el producto final en las bases: diez, dieciséis. Además en el formato IEEE<br>
+           
+           Los registros M y Q tienen una mantisa de siete bits. <br>
+           El contenido de los registros M y Q es:<br>
+            +3.25 = 011.01 -3.25 = 100.11 +14.75 = 01110.11<br>
+             M = 0111011 x 2-2 Q = 1110011 x 2-2 <br>
+             Aquí el número 3.25 se ha ajustado al tamaño de siete bits del registro Q.<br>
+              Las mantisas son enteras.<br>
+              <div><img src="Imagenes/EPF.jpg" width="400" height="400"/></div>
+           </p>
+        </section>
+                </article>
+            </section>
+            <footer>
+                <h2><div class="Derechos">Copyright&copy; 2020 - Página creada por Zodiaco - Todos los derechos reservados</div></h2>
+            </footer>
+        </div>
+    
+    
+    </body>
+
+    </html>
